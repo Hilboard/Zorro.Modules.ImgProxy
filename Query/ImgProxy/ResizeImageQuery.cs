@@ -9,7 +9,7 @@ public static class ResizeImageQuery
         this HttpQueryContext context,
         string imagePath,
         (int, int) resizeDimensions,
-        out string requestQueryPath,
+        out string requestQueryUri,
         string outputFormat = "webp"
     )
     {                                       
@@ -20,7 +20,7 @@ public static class ResizeImageQuery
         var signer = context.GetService<ImgProxySigner>();
         string signedQueryPath = signer.SignPath(queryPath);
 
-        requestQueryPath = Path.Combine(ImgProxyService.DefaultSettings.endpoint, signedQueryPath);
+        requestQueryUri = Path.Combine(ImgProxyService.DefaultSettings.endpoint, signedQueryPath);
 
         return context;
     }
