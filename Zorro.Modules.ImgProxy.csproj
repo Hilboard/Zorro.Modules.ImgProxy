@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>Zorro.Modules.ImgProxy</PackageId>
+		<Version>0.1.0</Version>
+		<Authors>Artem</Authors>
+		<Authors>Hilboard</Authors>
+		<Description>ImgProxy module for Zorro</Description>
+		<RepositoryUrl>https://github.com/Hilboard/Zorro.Modules.ImgProxy</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Zorro" Version="0.1.6" />
+	</ItemGroup>
+
+</Project>
