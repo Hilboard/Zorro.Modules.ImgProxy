@@ -1,6 +1,6 @@
 ﻿namespace Zorro.Modules.ImgProxy;
 
-public enum ThumbSizePresets
+public enum ThumbSizePresets : int
 {
     _32x32 = 32,
     _64x64 = 64,

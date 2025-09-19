@@ -7,12 +7,16 @@ public class ImgProxySigner
 {
     private string key { get; init; }
     private string salt { get; init; }
+    private string endpoint { get; init; }
 
-    public ImgProxySigner(string key, string salt)
+    public ImgProxySigner(string key, string salt, string endpoint)
     {
         this.key = key;
         this.salt = salt;
+        this.endpoint = endpoint;
     }
+
+    public string GetEndpoint() => endpoint;
 
     public string SignPath(string path)
     {
